@@ -21,3 +21,6 @@ def registration(request):
         return HttpResponse('Registration successful')
         
     return render_to_response('registration.html', locals(), context_instance=RequestContext(request) )
+
+def management(request):
+    return render_to_response('index.html', locals(), context_instance=RequestContext(request))
