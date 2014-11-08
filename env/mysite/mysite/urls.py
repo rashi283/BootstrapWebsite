@@ -13,5 +13,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^registration/', 'myapp.views.registration', name='registration' ),
     url(r'^management/', 'myapp.views.management', name='management'),
-    
+	url(r'^bigdata/', 'myapp.views.bigdata', name='bigdata'),
+    url(r'^index/', 'myapp.views.index', name='index'),
+	url(r'^login/', 'myapp.views.login', name='login'),
 )

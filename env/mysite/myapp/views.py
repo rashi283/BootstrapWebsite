@@ -24,3 +24,12 @@ def registration(request):
 
 def management(request):
     return render_to_response('management.html', locals(), context_instance=RequestContext(request))
+
+def bigdata(request):
+    return render_to_response('bigdata.html', locals(), context_instance=RequestContext(request))
+	
+def index(request):
+    return render_to_response('index.html', locals(), context_instance=RequestContext(request))
+
+def login(request):
+    return render_to_response('login.html', locals(), context_instance=RequestContext(request))
