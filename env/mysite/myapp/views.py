@@ -33,3 +33,9 @@ def index(request):
 
 def login(request):
     return render_to_response('login.html', locals(), context_instance=RequestContext(request))
+
+def pageLocations(request):
+    return render_to_response('page-Locations.html', locals(), context_instance=RequestContext(request))
+
+def pageIoT(request):
+    return render_to_response('page-IoT.html', locals(), context_instance=RequestContext(request))
